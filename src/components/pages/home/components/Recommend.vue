@@ -2,7 +2,7 @@
     <div>
         <div class="title" >热销推荐</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id" >
+            <li class="item border-bottom" v-for="item of list" :key="item.id" >
                     <img class="item-img" :src="item.imgUrl" alt="">
                 <div class="item-info">
                     <p class="item-title" >{{item.title}}</p>
@@ -17,31 +17,12 @@
 <script>
     export default {
         name: 'HomeRecommend',
+        props:{
+            list: Array
+        },
         data(){
             return {
-                recommendList:[
-                {
-                    id: "0001",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/1602/67/67feeab24cfc82bb90.water.jpg_200x200_af2a01b1.jpg",
-                    title: '广州圣亚海洋世界',
-                    desc: '浪漫广州，带你体验不一样的秋天',
-                    button: '查看详情'
-                },
-                {
-                    id: "0002",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/1611/96/96c7b547622c8334a3.img.jpg_200x200_cd0b30b0.jpg",
-                    title: '西山温泉',
-                    desc: '不可思议的西山温泉',
-                    button: '查看详情'
-                },
-                {
-                    id: "0003",
-                    imgUrl:"http://img1.qunarzz.com/sight/p0/201308/08/41150dacc0e3a0c8c8d65eac.jpg_200x200_c62292e9.jpg",
-                    title: '北京动物园',
-                    desc: '国家4AAAA级动物园',
-                    button: '查看详情'
-                }
-            ]
+                
             }
         }
     }

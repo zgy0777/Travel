@@ -35,7 +35,7 @@ export default {
         {
           id: "0003",
           imgUrl:
-            "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+            "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
           desc: "动物植物园"
         },
         {
@@ -47,14 +47,14 @@ export default {
         {
           id: "0005",
           imgUrl:
-            "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-          desc: "春季游玩"
+            "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+          desc: "故宫游玩"
         },
         {
           id: "0006",
           imgUrl:
-            "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
-          desc: "广州必游"
+            "http://img1.qunarzz.com/piao/fusion/1803/fa/2548667cb6e902.png",
+          desc: "野生动物园"
         },
         {
           id: "0007",
@@ -65,14 +65,14 @@ export default {
         {
           id: "0008",
           imgUrl:
-            "http://img1.qunarzz.com/piao/fusion/1811/1d/c46140e32fffa502.png",
+            "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
           desc: "旅行清单"
         },
         {
           id: "0009",
           imgUrl:
-            "http://img1.qunarzz.com/piao/fusion/1811/1d/c46140e32fffa502.png",
-          desc: "第九个"
+            "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+          desc: "旅行清单"
         }
       ]
     };
@@ -98,11 +98,14 @@ export default {
 @import '~styles/mixins.styl';
 
 .icons >>> .swiper-container {
-    height: 0;
-    padding-bottom: 50%;
+  height: 0;
+  padding-bottom: 50%;
 }
 
-.icon {
+.icons {
+  margin-top: 0.1rem;
+
+  .icon {
     position: relative;
     overflow: hidden;
     float: left;
@@ -111,31 +114,32 @@ export default {
     padding-bottom: 25%;
 
     .icon-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0.44rem;
-        box-sizing: border-box;
-        padding: 0.1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0.44rem;
+      box-sizing: border-box;
+      padding: 0.1rem;
 
-        .icon-img-content {
-            display: block;
-            margin: 0 auto;
-            height: 100%;
-        }
+      .icon-img-content {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+      }
     }
 
     .icon-desc {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 0.44rem;
-        line-height: 0.44rem;
-        text-align: center;
-        color: $darkTextColor;
-        ellipsis()
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      text-align: center;
+      color: $darkTextColor;
+      ellipsis();
     }
+  }
 }
 </style>
